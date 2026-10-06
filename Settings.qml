@@ -1,0 +1,3 @@
+import Caelestia.Plugins
+
+SettingsObject {}

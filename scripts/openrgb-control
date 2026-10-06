@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PY="$HOME/.local/share/caelestia/plugin-runtime/openrgb/venv/bin/python"
+if [[ ! -x "$PY" ]]; then
+  echo '{"available":false,"reason":"sdk_missing","state":{},"devices":[],"profiles":[]}'
+  exit 0
+fi
+exec "$PY" "$ROOT/openrgb-control.py" "$@"

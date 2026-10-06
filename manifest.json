@@ -1,0 +1,13 @@
+{
+  "name": "OpenRGB",
+  "version": "0.1.0",
+  "author": "dcqwqc",
+  "homepage": "https://github.com/dcqwqc/CaelestiaPlugin-OpenRGB",
+  "icon": "lightbulb",
+  "description": "Optional OpenRGB hardware-lighting integration for Caelestia. Follows the system accent or uses a custom colour/profile without being bundled into Color.",
+  "entryPoints": [
+    { "type": "custom", "source": "Main.qml" }
+  ],
+  "settings": "Settings.qml",
+  "settingsUi": "SettingsUi.qml"
+}

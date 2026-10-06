@@ -1,0 +1,12 @@
+[Unit]
+Description=Restore Caelestia OpenRGB lighting state
+ConditionPathExists=/usr/bin/openrgb
+After=openrgb-server.service
+Wants=openrgb-server.service
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/share/caelestia/plugins/openrgb/scripts/openrgb-control apply
+
+[Install]
+WantedBy=default.target
