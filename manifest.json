@@ -6,8 +6,12 @@
   "icon": "lightbulb",
   "description": "Optional OpenRGB hardware-lighting integration for Caelestia. Follows the system accent or uses a custom colour/profile without being bundled into Color.",
   "entryPoints": [
-    { "type": "custom", "source": "Main.qml" }
+    {
+      "type": "custom",
+      "source": "Main.qml"
+    }
   ],
   "settings": "Settings.qml",
-  "settingsUi": "SettingsUi.qml"
+  "settingsUi": "SettingsUi.qml",
+  "requires": ">=2.1.0"
 }
